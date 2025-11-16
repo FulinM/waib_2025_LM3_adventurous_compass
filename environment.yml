@@ -1,0 +1,14 @@
+name: waib_2025
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - ipykernel
+  - fastapi
+  - sentence-transformers
+  - uvicorn
+  - google-genai
+  - pytorch
+prefix: /home/matthias/Documents/Code/WAIB_hackathon/waib_2025/.conda

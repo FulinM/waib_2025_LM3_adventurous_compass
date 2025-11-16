@@ -1,0 +1,33 @@
+/* Minimal local CSS so the app has sensible defaults even without a Tailwind build step.
+   The Tailwind CDN will still provide utility classes; this CSS covers base fallbacks. */
+
+:root {
+  --accent: #0b66ff;
+  --bg: #f8fafc;
+  --muted: #6b7280;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #111827;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* fallback card styles in case Tailwind utilities are not applied yet */
+.card-fallback {
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  padding: 0.75rem;
+}
